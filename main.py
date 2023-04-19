@@ -5,15 +5,16 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
 def home():
-    valor = request.form.get('valor')
-
-    return render_template('home.html')
-    randint(1,5)
-    
-
-    # numero = 0
-    # if valorRecebido ==numero:
-        # return 'Você ganhou'
+    valor = str(request.form.get('valor'))
+    valor_quest = str(randint(1,5))
+    print(type(valor))
+    if request.method =="GET":
+        return render_template('home.html')
+    else:
+        if valor == valor_quest:
+            return 'Você ganhou'
+        else:
+            return 'você perdeu' 
 
 
 
