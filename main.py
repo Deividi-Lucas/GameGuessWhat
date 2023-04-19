@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from random import randint
 
 app = Flask(__name__)
 
@@ -7,6 +8,9 @@ def home():
     valor = request.form.get('valor')
 
     return render_template('home.html')
+    randint(1,5)
+    
+
     # numero = 0
     # if valorRecebido ==numero:
         # return 'Você ganhou'
