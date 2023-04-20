@@ -12,9 +12,9 @@ def home():
         return render_template('home.html')
     else:
         if valor == valor_quest:
-            return 'Você ganhou'
+            return '<h1>Você ganhou</h1>'
         else:
-            return 'você perdeu' 
+            return '<h1>você perdeu</h1>' 
 
 
 
