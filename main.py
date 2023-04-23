@@ -22,9 +22,6 @@ def home():
 
 
 # Rota inválida
-@app.route('/<string:nome>')
-def error(nome):
-    return '<h1>Essa página não existe</h1>'
 
 
 # Run server

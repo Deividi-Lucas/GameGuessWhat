@@ -1,9 +1,0 @@
-{
-    "scripts":{
-      "build":"flask --app main run"
-      },
-    
-  "dependencies": {
-    "vercel": "^28.20.0"
-  }
-}
